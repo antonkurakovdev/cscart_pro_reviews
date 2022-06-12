@@ -1,0 +1,349 @@
+msgid ""
+msgstr "Project-Id-Version: tygh"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Addons::name::altteam_pro_reviews"
+msgid "[Alt-team] Advanced Reviews"
+msgstr "[Alt-team] Advanced Reviews"
+
+msgctxt "Addons::description::altteam_pro_reviews"
+msgid "Extends the existing version of discussions. Developed by <a target="_blank" href="https://alt-team.com/">Alt-team</a>"
+msgstr "Extends the existing version of discussions. Developed by <a target="_blank" href="https://alt-team.com/">Alt-team</a>"
+
+msgctxt "Languages::global_review_attributes"
+msgid "Advanced Reviews"
+msgstr "Advanced Reviews"
+
+msgctxt "Languages::attribute"
+msgid "Attribute"
+msgstr "Attributes"
+
+msgctxt "Languages::attributes_have_been_applied_to_products"
+msgid "Attributes have been successfully applied to the selected products"
+msgstr "Attributes have been successfully applied to the selected products"
+
+msgctxt "Languages::review_attributes"
+msgid "Review attributes"
+msgstr "Review attributes"
+
+msgctxt "Languages::customer_reviews"
+msgid "Customer Reviews"
+msgstr "Customer Reviews"
+
+msgctxt "Languages::write_your_review"
+msgid "Write your own Review"
+msgstr "Write your own Review"
+
+msgctxt "Languages::stars"
+msgid "stars"
+msgstr "stars"
+
+msgctxt "Languages::average_rating"
+msgid "Average rating"
+msgstr "Average rating"
+
+msgctxt "Languages::reviews"
+msgid "reviews"
+msgstr "reviews"
+
+msgctxt "Languages::reviews_title"
+msgid "Reviews"
+msgstr "Reviews"
+
+msgctxt "Languages::you_like_this"
+msgid "Helpful"
+msgstr "Helpful"
+
+msgctxt "Languages::you_not_like_this"
+msgid "Useless"
+msgstr "Useless"
+
+msgctxt "Languages::no_more_vote"
+msgid "Sorry, you have already voted!"
+msgstr "Sorry, you have already voted!"
+
+msgctxt "Languages::thanks_for_vote"
+msgid "Thanks for voting"
+msgstr "Thanks for voting"
+
+msgctxt "Languages::found_useful"
+msgid "Found useful"
+msgstr "Found useful"
+
+msgctxt "Languages::out_of"
+msgid "out of"
+msgstr "out of"
+
+msgctxt "Languages::select_attributes"
+msgid "Select attributes"
+msgstr "Select attributes"
+
+msgctxt "Languages::most_helpful_first"
+msgid "Most helpful first"
+msgstr "Most helpful first"
+
+msgctxt "Languages::highest_rating_first"
+msgid "Highest rating first"
+msgstr "Highest rating first"
+
+msgctxt "Languages::lowest_rating_first"
+msgid "Lowest rating first"
+msgstr "Lowest rating first"
+
+msgctxt "Languages::newest_first"
+msgid "Newest first"
+msgstr "Newest first"
+
+msgctxt "Languages::oldest_first"
+msgid "Oldest first"
+msgstr "Oldest first"
+
+msgctxt "Languages::was_helpful"
+msgid "Was this review helpful for you?"
+msgstr "Was this review helpful for you?"
+
+msgctxt "Languages::zero_price_html_block"
+msgid "Zero price HTML block"
+msgstr "Zero price HTML block"
+
+msgctxt "Languages::reviews_emails"
+msgid "Reviews emails"
+msgstr "Reviews emails"
+
+msgctxt "Languages::text_all_items_included"
+msgid "All items included"
+msgstr "All items included"
+
+msgctxt "Languages::review_attributes_yes"
+msgid "Yes"
+msgstr "Yes"
+
+msgctxt "Languages::review_attributes_no"
+msgid "No"
+msgstr "No"
+
+msgctxt "Languages::review_attributes_no"
+msgid "No"
+msgstr "No"
+
+msgctxt "Languages::global_review_attributes_menu_description"
+msgid "Manage the attributes of review"
+msgstr "Manage the attributes of review"
+
+msgctxt "Languages::manage_attributes"
+msgid "Reviews attributes"
+msgstr "Reviews attributes"
+
+msgctxt "Languages::apply_attr_to_product"
+msgid "Apply attributes to products"
+msgstr "Apply attributes to products"
+
+msgctxt "Languages::reccomended_this_item"
+msgid "of customers recommend this product"
+msgstr "of customers recommend this product"
+
+msgctxt "Languages::customer_not_reccomended"
+msgid "Not recommended"
+msgstr "Not recommended"
+
+msgctxt "Languages::customer_reccomended"
+msgid "Recommended"
+msgstr "Recommended"
+
+msgctxt "Languages::pro_plus"
+msgid "Pluses"
+msgstr "Pluses"
+
+msgctxt "Languages::pro_minus"
+msgid "Minuses"
+msgstr "Minuses"
+
+msgctxt "Languages::review"
+msgid "Review"
+msgstr "Review"
+
+msgctxt "Languages::is_recommended"
+msgid "Recommend a product?"
+msgstr "Recommend a product?"
+
+msgctxt "Languages::enable_all_reviews"
+msgid "Enable All Reviews"
+msgstr "Enable All Reviews"
+
+msgctxt "Languages::disable_all_reviews"
+msgid "Disable All Reviews"
+msgstr "Disable All Reviews"
+
+msgctxt "Languages::er_enable"
+msgid "Use"
+msgstr "Use"
+
+msgctxt "Languages::click_link_below"
+msgid "Please, select an action"
+msgstr "Please, select an action"
+
+msgctxt "SettingsSections::altteam_pro_reviews::general"
+msgid "General"
+msgstr "General"
+
+msgctxt "SettingsSections::altteam_pro_reviews::styles"
+msgid "Styles"
+msgstr "Styles"
+
+msgctxt "SettingsSections::altteam_pro_reviews::enable_reviews"
+msgid "Enable reviews"
+msgstr "Enable reviews"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::default_status"
+msgid "Default value"
+msgstr "Default value"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enabled_reviews"
+msgid "Enabled All Reviews"
+msgstr "Enabled All Reviews"
+
+msgctxt "SettingsVariants::altteam_pro_reviews::default_status::B"
+msgid "Communication and Rating"
+msgstr "Communication and Rating"
+
+msgctxt "SettingsVariants::altteam_pro_reviews::default_status::C"
+msgid "Communication"
+msgstr "Communication"
+
+msgctxt "SettingsVariants::altteam_pro_reviews::default_status::R"
+msgid "Rating"
+msgstr "Rating"
+
+msgctxt "SettingsVariants::altteam_pro_reviews::default_status::D"
+msgid "Disabled"
+msgstr "Disabled"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_recommendation"
+msgid "Enable recommendation"
+msgstr "Enable recommendation"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_chart"
+msgid "Enable chart"
+msgstr "Enable chart"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_summary_notice"
+msgid "Enable summary notice"
+msgstr "Enable summary notice"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_sorting"
+msgid "Enable sorting"
+msgstr "Enable sorting"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_likes"
+msgid "Enable likes"
+msgstr "Enable likes"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_date"
+msgid "Enable date"
+msgstr "Enable date"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_image"
+msgid "Enable image"
+msgstr "Enable image"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_title"
+msgid "Enable date of experience"
+msgstr "Enable date of experience"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_advantages"
+msgid "Enable advantages"
+msgstr "Enable advantages"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_real_customer"
+msgid "Enable real customer"
+msgstr "Enable real customer"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_admin_answer"
+msgid "Enable administrator's answer"
+msgstr "Enable administrator's answer"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_admin_answer"
+msgid "Enable administrator's answer"
+msgstr "Enable administrator's answer"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::stars"
+msgid "Stars color"
+msgstr "Stars color"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::likes_icons"
+msgid "Like icons color"
+msgstr "Like icons color"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::text"
+msgid "Text color"
+msgstr "Text color"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::reccom"
+msgid "Recommendations color"
+msgstr "Recommendations color"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::review_btn_back"
+msgid "Review button background"
+msgstr "Review button background"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::review_btn_text"
+msgid "Review button text color"
+msgstr "Review button text color"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::pie_chart"
+msgid "Chart color"
+msgstr "Chart color"
+
+msgctxt "Languages::admin_response"
+msgid "Admin's response"
+msgstr "Admin's response"
+
+msgctxt "Languages::one_review"
+msgid "review"
+msgstr "review"
+
+msgctxt "Languages::several_reviews"
+msgid "reviews"
+msgstr "reviews"
+
+msgctxt "Languages::pro_many_reviews"
+msgid "reviews"
+msgstr "reviews"
+
+msgctxt "Languages::only_recommended"
+msgid "Only reсommended"
+msgstr "Only reсommended"
+
+msgctxt "Languages::only_real_customers"
+msgid "Only real customers"
+msgstr "Only real customers"
+
+msgctxt "Languages::real_customer"
+msgid "Real customer"
+msgstr "Real customer"
+
+msgctxt "Languages::real_customer_notice"
+msgid "Customers who confirmed their review with a purchase"
+msgstr "Customers who confirmed their review with a purchase"
+
+msgctxt "Languages::pro_summary_notice"
+msgid "Your review will be checked by administrators before it gets published."
+msgstr "Your review will be checked by administrators before it gets published."
+
+msgctxt "Languages::usage_time"
+msgid "Purchased"
+msgstr "Purchased"
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,339 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cs-cart-latest\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: Russian\n"
+"Language: ru_RU\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: crowdin.net\n"
+"Last-Translator: cscart <zeke@cs-cart.com>\n"
+"PO-Revision-Date: 2014-07-22 06:00-0400\n"
+
+msgctxt "Addons::name::altteam_pro_reviews"
+msgid "[Alt-team] Advanced Reviews"
+msgstr "[Alt-team] Продвинутые отзывы"
+
+msgctxt "Addons::description::altteam_pro_reviews"
+msgid "Extends the existing version of discussions. Developed by <a target="_blank" href="https://alt-team.com/">Alt-team</a>"
+msgstr "Позволяет добавлять дополнительные параметры к отзывам и разбивать оценку на несколько пунктов (доставка, обслуживание, быстрота и т.д). Разработано <a target="_blank" href="https://alt-team.com/">Alt-team</a>"
+
+msgctxt "Languages::global_review_attributes"
+msgid "Advanced Reviews"
+msgstr "Продвинутые отзывы"
+
+msgctxt "Languages::attribute"
+msgid "attribute"
+msgstr "Параметры"
+
+msgctxt "Languages::attributes_have_been_applied_to_products"
+msgid "Attributes have been successfully applied to the selected products"
+msgstr "Параметры были успешно применены к выбранным товарам"
+
+msgctxt "Languages::review_attributes"
+msgid "Review attributes"
+msgstr "Параметры отзыва"
+
+msgctxt "Languages::customer_reviews"
+msgid "Customer Reviews"
+msgstr "Отзывы пользователя"
+
+msgctxt "Languages::write_your_review"
+msgid "Write your own Review"
+msgstr "Оставьте Ваш отзыв"
+
+msgctxt "Languages::stars"
+msgid "stars"
+msgstr "звёзды"
+
+msgctxt "Languages::average_rating"
+msgid "Average rating"
+msgstr "Суммарный рейтинг"
+
+msgctxt "Languages::reviews"
+msgid "reviews"
+msgstr "отзывы"
+
+msgctxt "Languages::reviews_title"
+msgid "Reviews"
+msgstr "Отзывы"
+
+msgctxt "Languages::you_like_this"
+msgid "Helpful"
+msgstr "Полезный"
+
+msgctxt "Languages::you_not_like_this"
+msgid "Useless"
+msgstr "Бесполезный"
+
+msgctxt "Languages::no_more_vote"
+msgid "Sorry, you have already voted!"
+msgstr "Извините, но вы уже проголосовали!"
+
+msgctxt "Languages::thanks_for_vote"
+msgid "Thanks for voting"
+msgstr "Спасибо за голосование"
+
+msgctxt "Languages::found_useful"
+msgid "Found useful"
+msgstr "Был полезен"
+
+msgctxt "Languages::out_of"
+msgid "out of"
+msgstr "out of"
+
+msgctxt "Languages::select_attributes"
+msgid "Select attributes"
+msgstr "Выберите параметры"
+
+msgctxt "Languages::most_helpful_first"
+msgid "Most helpful first"
+msgstr "Сперва самые полезные"
+
+msgctxt "Languages::highest_rating_first"
+msgid "Highest rating first"
+msgstr "Сначала с высшим рейтингом"
+
+msgctxt "Languages::lowest_rating_first"
+msgid "Lowest rating first"
+msgstr "Сначала с низшим рейтингом"
+
+msgctxt "Languages::newest_first"
+msgid "Newest first"
+msgstr "Сначала новые"
+
+msgctxt "Languages::oldest_first"
+msgid "Oldest first"
+msgstr "Сначала старые"
+
+msgctxt "Languages::was_helpful"
+msgid "Was this review helpful for you?"
+msgstr "Был ли Вам полезен этот отзыв?"
+
+msgctxt "Languages::zero_price_html_block"
+msgid "Zero price HTML block"
+msgstr "HTML блок с нулевой ценой"
+
+msgctxt "Languages::reviews_emails"
+msgid "Reviews emails"
+msgstr "Отзывы на почты"
+
+msgctxt "Languages::text_all_items_included"
+msgid "All items included"
+msgstr "Все элементы включены"
+
+msgctxt "Languages::review_attributes_yes"
+msgid "Yes"
+msgstr "Да"
+
+msgctxt "Languages::review_attributes_no"
+msgid "No"
+msgstr "Нет"
+
+msgctxt "Languages::global_review_attributes_menu_description"
+msgid "Manage the attributes of review"
+msgstr "Управление параметрами отзывов"
+
+msgctxt "Languages::manage_attributes"
+msgid "Reviews attributes"
+msgstr "Парметры отзывов"
+
+msgctxt "Languages::apply_attr_to_product"
+msgid "Apply attributes to products"
+msgstr "Применить параметры к товарам"
+
+msgctxt "Languages::reccomended_this_item"
+msgid "of customers recommend this product"
+msgstr "пользователей рекомендует этот товар"
+
+msgctxt "Languages::customer_not_reccomended"
+msgid "Not recommended"
+msgstr "Не рекомендует"
+
+msgctxt "Languages::customer_reccomended"
+msgid "Recommended"
+msgstr "Рекомендует"
+
+msgctxt "Languages::pro_plus"
+msgid "Pluses"
+msgstr "Плюсы"
+
+msgctxt "Languages::pro_minus"
+msgid "Minuses"
+msgstr "Минусы"
+
+msgctxt "Languages::review"
+msgid "Review"
+msgstr "Отзыв"
+
+msgctxt "Languages::is_recommended"
+msgid "Recommend a product?"
+msgstr "Рекомендуете товар?"
+
+msgctxt "Languages::enable_all_reviews"
+msgid "Enable All Reviews"
+msgstr "Включить Отзывы"
+
+msgctxt "Languages::disable_all_reviews"
+msgid "Disable All Reviews"
+msgstr "Выключить Отзывы"
+
+msgctxt "Languages::er_enable"
+msgid "Use"
+msgstr "Применить"
+
+msgctxt "Languages::click_link_below"
+msgid "Please, select an action"
+msgstr "Пожалуйста, выберите действие"
+
+msgctxt "SettingsSections::altteam_pro_reviews::general"
+msgid "General"
+msgstr "Общее"
+
+msgctxt "SettingsSections::altteam_pro_reviews::general"
+msgid "General"
+msgstr "Общее"
+
+msgctxt "SettingsSections::altteam_pro_reviews::styles"
+msgid "Styles"
+msgstr "Стили"
+
+msgctxt "SettingsSections::altteam_pro_reviews::enable_reviews"
+msgid "Enable reviews"
+msgstr "Управление отзывами"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::default_status"
+msgid "Default value"
+msgstr "Значение по умолчанию"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enabled_reviews"
+msgid "Enabled All Reviews"
+msgstr "Включить все отзывы"
+
+msgctxt "SettingsVariants::altteam_pro_reviews::default_status::B"
+msgid "Communication and Rating"
+msgstr "Обсуждение и Рейтинг"
+
+msgctxt "SettingsVariants::altteam_pro_reviews::default_status::C"
+msgid "Communication"
+msgstr "Обсуждение"
+
+msgctxt "SettingsVariants::altteam_pro_reviews::default_status::R"
+msgid "Rating"
+msgstr "Рейтинг"
+
+msgctxt "SettingsVariants::altteam_pro_reviews::default_status::D"
+msgid "Disabled"
+msgstr "Выключено"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_recommendation"
+msgid "Enable recommendation"
+msgstr "Включить рекомендации"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_chart"
+msgid "Enable chart"
+msgstr "Включить диаграмму"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_summary_notice"
+msgid "Enable summary notice"
+msgstr "Включить предупреждение"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_sorting"
+msgid "Enable sorting"
+msgstr "Включить сортировку"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_likes"
+msgid "Enable likes"
+msgstr "Включить оценку ответов"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_date"
+msgid "Enable date"
+msgstr "Показать дату"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_image"
+msgid "Enable image"
+msgstr "Показать изображение"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_title"
+msgid "Enable date of experience"
+msgstr "Показать срок использования"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_advantages"
+msgid "Enable advantages"
+msgstr "Показать преимущества"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_real_customer"
+msgid "Enable real customer"
+msgstr "Показать бейдж проверенного покупателя"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::enable_admin_answer"
+msgid "Enable administrator's answer"
+msgstr "Показать ответ администратора"
+
+
+msgctxt "Languages::admin_response"
+msgid "Admin's response"
+msgstr "Ответ администратора"
+
+msgctxt "Languages::one_review"
+msgid "review"
+msgstr "отзыв"
+
+msgctxt "Languages::several_reviews"
+msgid "reviews"
+msgstr "отзыва"
+
+msgctxt "Languages::pro_many_reviews"
+msgid "reviews"
+msgstr "отзывов"
+
+msgctxt "Languages::only_recommended"
+msgid "Only reсommended"
+msgstr "Только рекомендованные"
+
+msgctxt "Languages::only_real_customers"
+msgid "Only real customers"
+msgstr "Только настоящие покупатели"
+
+msgctxt "Languages::real_customer"
+msgid "Real customer"
+msgstr "Настоящий покупатель"
+
+msgctxt "Languages::real_customer_notice"
+msgid "Customers who confirmed their review with a purchase"
+msgstr "Покупатель, который подтвердил отзыв покупкой"
+
+msgctxt "Languages::pro_summary_notice"
+msgid "Your review will be checked by administrators before it gets published."
+msgstr "Ваш отзыв будет проверен администраторами сайта, прежде чем оно будет опубликован."
+
+msgctxt "SettingsOptions::altteam_pro_reviews::stars"
+msgid "Stars color"
+msgstr "Цвет звёзд"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::likes_icons"
+msgid "Like icons color"
+msgstr "Цвет лайков"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::text"
+msgid "Text color"
+msgstr "Цвет текста"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::reccom"
+msgid "Recommendations color"
+msgstr "Цвет рекомендации"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::review_btn_back"
+msgid "Review button background"
+msgstr "Фон кнопки отзыва"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::review_btn_text"
+msgid "Review button text color"
+msgstr "Цвет шрифта кнопки отзыва"
+
+msgctxt "SettingsOptions::altteam_pro_reviews::pie_chart"
+msgid "Chart color"
+msgstr "Цвет диаграммы"
+
+msgctxt "Languages::usage_time"
+msgid "Purchased"
+msgstr "Срок использования"

@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>altteam_pro_reviews</id>
+    <version>2.1.3</version>
+    <status>active</status>
+    <priority>4294967294</priority>
+    <position>10</position> 
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    <default_language>en</default_language>
+    <has_icon>Y</has_icon>
+   	<compatibility>
+   		<conflicts>altteam_reviews_tree</conflicts>
+   		<dependencies>discussion</dependencies>
+        <core_version>
+            <min>4.4.2</min>
+        </core_version>
+   	</compatibility>
+    <authors>
+        <author>
+            <name>Alt-team</name>
+            <email>manager@alt-team.com</email>
+            <url>https://alt-team.com</url>
+        </author>
+    </authors>
+    <supplier>Alt-team</supplier>
+    <supplier_link>https://alt-team.com</supplier_link>
+	<queries>
+        <item>DROP TABLE IF EXISTS ?:review_rating</item>
+        <item>DROP TABLE IF EXISTS ?:review_attributes</item>   
+        <item>DROP TABLE IF EXISTS ?:review_likes</item>    
+        <item>DROP TABLE IF EXISTS ?:review_attributes_links</item> 
+        <item>DROP TABLE IF EXISTS ?:review_attributes_description</item>
+
+		<item for="install">CREATE TABLE IF NOT EXISTS ?:review_attributes (
+		  attr_id MEDIUMINT(8) UNSIGNED NOT NULL AUTO_INCREMenT,
+		  object_id MEDIUMINT(8) UNSIGNED NULL,
+		  object_type CHAR(1) NULL,
+		  position SMALLINT(5) UNSIGNED NULL,
+		  status MEDIUMINT UNSIGNED NULL,
+		  PRIMARY KEY(attr_id),
+		  INDEX object_id(object_id)
+		) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+		<item for="install">CREATE TABLE IF NOT EXISTS `?:review_likes` (
+		  `like_id` mediumint(8) unsigned NOT NULL AUTO_INCREMenT,
+		  `post_id` mediumint(8) unsigned NOT NULL,
+		  `user_id` mediumint(8) unsigned NOT NULL,
+		  `is_like` tinyint(1) unsigned DEFAULT '0',
+		  PRIMARY KEY (`like_id`),
+		  UNIQUE KEY `user_id_post_id` (`post_id`,`user_id`)
+		) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+		
+		<item for="install">CREATE TABLE IF NOT EXISTS `?:review_attributes_links` (
+		  `attr_id` mediumint(8) unsigned NOT NULL,
+		  `object_id` mediumint(8) unsigned DEFAULT NULL,
+		  `object_type` char(1) DEFAULT NULL,
+		  UNIQUE KEY `attr_id` (`attr_id`,`object_id`)
+		) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+		
+		<item for="install">CREATE TABLE IF NOT EXISTS ?:review_attributes_description (
+		  attr_id MEDIUMINT(8) UNSIGNED NOT NULL,
+		  lang_code CHAR(2) NOT NULL DEFAULT 'en',
+		  attr_name VARCHAR(255) NOT NULL,
+		  INDEX attr_id(attr_id)
+		) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+		<item for="install">CREATE TABLE IF NOT EXISTS `?:review_rating` (
+		  `attr_id` mediumint(8) unsigned NOT NULL,
+		  `post_id` mediumint(8) unsigned NOT NULL,
+		  `rating` tinyint(1) unsigned DEFAULT NULL,
+		  UNIQUE KEY `attr_id_post_id` (`post_id`,`attr_id`)
+		) Engine=MyISAM DEFAULT CHARSET UTF8;
+        </item>
+
+		<item for="install">ALTER TABLE `?:discussion_messages` ADD `message_title` VARCHAR( 255 ) NOT NULL AFTER `message`</item>
+		<item for="install">ALTER TABLE `?:discussion_messages` ADD `minus` VARCHAR( 255 ) NOT NULL AFTER `message`</item>
+		<item for="install">ALTER TABLE `?:discussion_messages` ADD `plus` VARCHAR( 255 ) NOT NULL AFTER `message`</item>
+		<item for="install">ALTER TABLE `?:discussion_messages` ADD `is_recommended` char(1) NOT NULL default 'Y' AFTER `message`</item>
+		<item for="install">ALTER TABLE `?:discussion_messages` ADD `admin_response` VARCHAR( 128 )  CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT ''</item>
+        <item for="install">ALTER TABLE `?:discussion_posts` ADD `email` VARCHAR( 128 )  CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '';</item>
+        <item for="install">ALTER TABLE `?:product_descriptions` ADD `z_p_html_block` MEDIUMTEXT CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;</item>
+
+        <item for="uninstall">ALTER TABLE `?:discussion_messages` DROP `message_title`;</item>
+        <item for="uninstall">ALTER TABLE `?:discussion_messages` DROP `minus`;</item>
+        <item for="uninstall">ALTER TABLE `?:discussion_messages` DROP `plus`;</item>
+        <item for="uninstall">ALTER TABLE `?:discussion_messages` DROP `is_recommended`;</item>
+        <item for="uninstall">ALTER TABLE `?:discussion_messages` DROP `admin_response`;</item>     
+        <item for="uninstall">ALTER TABLE `?:discussion_posts` DROP `email`;</item>
+        <item for="uninstall">ALTER TABLE `?:product_descriptions` DROP `z_p_html_block`;</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:review_rating</item>
+        <item for="uninstall">DROP TABLE IF EXISTS ?:review_attributes</item>   
+        <item for="uninstall">DROP TABLE IF EXISTS ?:review_likes</item>    
+        <item for="uninstall">DROP TABLE IF EXISTS ?:review_attributes_links</item> 
+        <item for="uninstall">DROP TABLE IF EXISTS ?:review_attributes_description</item>
+
+	</queries>
+	<functions>
+		<item for="install">fn_review_attributes_install</item>
+		<item for="install">fn_activate_review_attributes</item>
+		<item for="uninstall">fn_review_attributes_uninstall</item>
+	</functions>
+    <settings edition_type="ROOT">
+        <sections>
+			<section id="general">
+				<items>
+                    <item id="enable_recommendation">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                    <item id="enable_chart">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                    <item id="enable_summary_notice">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                    <item id="enable_sorting">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                    <item id="enable_likes">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                    <item id="enable_date">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                    <item id="enable_image">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                    <item id="enable_title">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>
+                    <item id="enable_advantages">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>  
+                    <item id="enable_admin_answer">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>   
+                    <item id="enable_real_customer">
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                    </item>                    
+				</items>
+			</section>
+			<section id="styles">
+				<items>
+                    <item id="stars">
+                        <type>text</type>
+                        <default_value>#feba0f</default_value>
+                    </item>		
+                    <item id="likes_icons">
+                        <type>text</type>
+                        <default_value>#feba0f</default_value>
+                    </item>		
+                    <item id="text">
+                        <type>text</type>
+                        <default_value>#000000</default_value>
+                    </item>			
+                    <item id="reccom">
+                        <type>text</type>
+                        <default_value>#1abe6e</default_value>
+                    </item>			
+                    <item id="review_btn_back">
+                        <type>text</type>
+                        <default_value>#ff5319</default_value>
+                    </item>	
+                    <item id="review_btn_text">
+                        <type>text</type>
+                        <default_value>#ffffff</default_value>
+                    </item>	
+                    <item id="pie_chart">
+                        <type>text</type>
+                        <default_value>#ffb400</default_value>
+                    </item>						
+				</items>
+			</section>
+			<section id="enable_reviews">
+				<items>
+					<item id="default_status">
+						<type>selectbox</type>
+						<default_value>D</default_value>
+						<variants>
+							<item id="B"></item>
+							<item id="C"></item>
+							<item id="R"></item>
+							<item id="D"></item>
+						</variants>
+					</item>
+					<item id="enabled_reviews">
+						<type>info</type>
+						<handler>fn_altteam_pro_reviews_generate_info</handler>
+					</item>
+				</items>
+			</section>
+        </sections>
+    </settings>	
+
+</addon>
+ 
